@@ -20,7 +20,10 @@
 </div>
 
 <form action="" method="POST" enctype="multipart/form-data">
-	<input type="file" name="photo[]" id="photo[]" multiple="" value="Choisit ta photo"/>
+	<div>
+	<strong><label for="photo[]"><span class="btn btn-primary">Séléctionnez les fichiers à uploader</span></label></strong>
+	<input type="file" name="photo[]" id="photo[]" multiple="" style="display:none;"/>
+	</div>
 	<button type="button" id="pre" class="btn btn-primary" onClick="clic()"/>Prévisualiser</button>
 	<button type="button" name="ok" onClick="envoyer()" class="btn btn-success">Soumettre <span id="spinner"><i class="fa fa-spinner fa-spin" title="button-loader"></i></span></button>
 	<button type="reset" id="dismiss" class="btn btn-danger" onClick="fermeture()">Retirer</button>
